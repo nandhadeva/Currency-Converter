@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="converter">
+    <!-- step 1 curreny enter creation-->
+    <h1>INR Currency Converter</h1>
+    <div>
+        <label for="amount">Amount-Indian Rupees:</label>
+        <input type="number" id="currency_value_amount" placeholder="Enter amount">
+    </div>
+    <!-- step 2 select currency-->
+    <div>
+        <label for="currency">Convert to:</label>
+        <select id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+        </select>
+    </div>
+
+    <button onclick="convertCurrency()">Convert</button>
+    <!-- step 3 result print below -->
+    <div id="result">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
